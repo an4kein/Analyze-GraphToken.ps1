@@ -15,9 +15,11 @@ Este script PowerShell tem como objetivo auxiliar analistas ofensivos (Red Teams
 
 ```powershell
 $token = "<cole aqui seu token JWT>"
-.\Analyze-GraphToken.ps1
+Import-Module .\Analyze-GraphToken.ps1
 Analyze-GraphToken -Token $token
 ```
+
+![image](https://github.com/user-attachments/assets/d6a75867-7c72-4cbf-9db4-70657028a6ad)
 
 ## Exemplo de output
 [+] Escopos (scp):
