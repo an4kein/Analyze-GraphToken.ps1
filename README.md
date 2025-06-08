@@ -17,3 +17,15 @@ Este script PowerShell tem como objetivo auxiliar analistas ofensivos (Red Teams
 $token = "<cole aqui seu token JWT>"
 .\Analyze-GraphToken.ps1
 Analyze-GraphToken -Token $token
+```
+
+## Exemplo de output
+[+] Escopos (scp):
+ - User.Read
+ - Directory.Read.All
+ - Application.Read.All
+
+[+] Ações recomendadas com base nos escopos:
+ - User.Read → Get-MgUser -UserId <me> # Verifica informações básicas da conta comprometida
+ - Directory.Read.All → Get-MgUser / Get-MgGroup / Get-MgServicePrincipal # Permite completa enumeração de objetos no tenant
+ - Application.Read.All → Get-MgApplication -All # Enumeração de apps registrados — possível targeting para consent abuse
