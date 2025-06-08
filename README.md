@@ -32,4 +32,4 @@ Analyze-GraphToken -Token $token
  - Directory.Read.All → Get-MgUser / Get-MgGroup / Get-MgServicePrincipal # Permite completa enumeração de objetos no tenant
  - Application.Read.All → Get-MgApplication -All # Enumeração de apps registrados — possível targeting para consent abuse
 
-![image](https://github.com/user-attachments/assets/fc8b00d6-44e0-4272-ab4a-4795a59afb8b)
+![image](https://github.com/user-attachments/assets/00ddc354-be20-4231-ab85-314c1eab2335)
