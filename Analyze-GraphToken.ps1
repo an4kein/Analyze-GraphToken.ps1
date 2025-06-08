@@ -40,6 +40,10 @@ function Analyze-GraphToken {
             "Device.Read.All"        = "Get-MgDevice -All # Enumeração de dispositivos unidos ao tenant, útil para mapeamento e movimento lateral"
             "User.Export.All"        = "Export-MgReportUserCredentialUsageDetails # Exfiltração massiva de dados de usuários"
             "IdentityRiskEvent.Read.All" = "Get-MgRiskDetection # Acesso a alertas e eventos de risco — útil para antiforense"
+            "DeviceManagementConfiguration.Read.All"     = "# Permite ler políticas de gerenciamento de dispositivos (Intune). Útil para entender regras de conformidade e segurança aplicadas"
+            "DeviceManagementConfiguration.ReadWrite.All" = "# Permite leitura e modificação das configurações de gerenciamento de dispositivos. Pode ser usado para enfraquecer políticas de segurança (ex: afrouxar compliance)"
+            "ServicePrincipalEndpoint.Read.All"          = "# Escopo raro, possivelmente relacionado à leitura de endpoints de SPNs. Útil para entender interações entre apps e APIs (pouco documentado publicamente)"
+
         }
 
         Write-Host "`n[+] Ações recomendadas com base nos escopos:"
